@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height:100%;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    font-family: sans-serif;
+}
+
+.overlay {
+    width:100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    flex-direction: column;
+}
+
+.top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size:25px;
+    display: flex;
+    padding:20px;
+    color:rgba(255,255,255,0.5);
+}
+
+.top .left {
+    flex: 1 0 auto;
+    text-align: left;
+}
+
+.top .right {
+    flex: 1 1 auto;
+    text-align: right;
+}
+
+.time {
+    font-size:200px;
+    margin:0;
+    font-weight: 400;
+}
+
+.left-interest {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.left-interest label {
+    margin-right: 10px;
+}
+
+.input-interest {
+    outline: none;
+    border: none;
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.0);
+    color:rgba(255,255,255,0.5);
+    font-weight: 400;
+}
+
+.typed-interest {
+    border-bottom: none;
+}
+
+.photoby {
+    text-decoration: none;
+    color:rgba(255,255,255,0.5);
+}
+
+.photoby:hover {
+    color: red;
+}
+
+.greeting {
+    font-size:80px;
+    font-weight: 400;
+}
+
+.input-name {
+    outline: none;
+    width: 40%;
+    border: none;
+    border-bottom: 2px solid #fff;
+    margin-top: 15px;
+    font-size: 36px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.0);
+    color: #fff;
+    font-weight: 700;
+}
+
+.input-name::placeholder {
+    color: #fff;
+}
+
+.input-name:active {
+    background-color: rgba(0, 0, 0, 0.0);
+    border-bottom: 2px solid #fff;
+}
+
+.input-name:focus,
+.input-interest:focus {
+    border-bottom: none;
+}
+
+.typed-name {
+    text-decoration: underline;
+    border-bottom: none;
+}
+
+.quote {
+    width: 30%;
+    text-align: center;
+    align-self: flex-end;
+    color:rgba(255,255,255,0.5);
+    font-size: 12px;
+    margin-top: 100px;
+}
